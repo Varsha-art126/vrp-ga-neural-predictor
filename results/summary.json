@@ -1,0 +1,29 @@
+{
+  "instance": {
+    "n_customers": 40,
+    "capacity": 100,
+    "total_demand": 661,
+    "min_vehicles": 7
+  },
+  "baseline_ga": {
+    "best_distance": 1080.85403786647,
+    "exact_evaluations": 9000,
+    "wall_clock_seconds": 1.1501553058624268,
+    "n_routes": 8
+  },
+  "surrogate_ga": {
+    "best_distance": 1182.592200478127,
+    "exact_evaluations": 9000,
+    "wall_clock_seconds": 8.527903079986572,
+    "n_routes": 7
+  },
+  "predictor": {
+    "n_training_samples": 800,
+    "val_mae": 18.720680712404878,
+    "val_mape_pct": 0.9237530203350028
+  },
+  "comparison": {
+    "quality_gap_pct": 9.412756861461249,
+    "note": "Both GA variants use an identical exact-eval budget (pop_size x generations); the surrogate pre-filters a larger candidate pool per generation instead of reducing total exact evaluations."
+  }
+}
